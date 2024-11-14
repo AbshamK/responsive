@@ -1,0 +1,195 @@
+@media (max-width: 991px) {
+    .logo-container {
+        order: 1; /* Bring the logo to the center */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* Navbar toggler on the right */
+    .navbar-toggler {
+        order: 2;
+        margin-left: auto;
+    }
+    
+}
+/* Default style for larger screens */
+/* Ensures that SVG displays properly */
+#logo {
+    display: flex;
+    justify-content: flex-start; /* Center logo horizontally in its container */
+    align-items: center; /* Center vertically if needed */
+    width: 100%; /* Make sure container takes up full width */
+    overflow: visible; /* Ensure SVG isn’t hidden */
+  }
+  
+  /* Default to left-align logo on larger screens */
+  .logo-row {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 12%;
+  }
+  
+  /* Center logo on smaller screens */
+  @media (max-width: 576px) {
+    .logo-row {
+      justify-content: center;
+      padding-left: 0;
+    }
+  
+    #logo {
+      text-align: center;
+    }
+  }
+  
+.offersText{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 3.2%;
+    justify-content: space-between;
+}
+
+
+@media screen and (min-width:576px) {
+    .carousel-inner{
+        display: flex;
+    }
+    .carousel-item{
+        margin-right: 0;
+        display: block;
+        flex: 0 0 calc(100%/3);
+    }
+    .img-wrapper{
+    max-width: 100%;
+    height: 59%;
+    }
+}
+.carousel-inner{
+    padding: 1em;
+}
+.carousel-inner .carousel-item{
+    display: flex;
+    flex: 0 0 33.33%;
+    max-width: 33.333%;
+}
+.card{
+    margin: 0 .5em;
+    max-width: fit-content;
+
+}
+.carousel-item{
+    width: fit-content !important;
+}
+.img-wrapper{
+    max-width: fit-content;
+    height: 59%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.carousel-item .img{
+    max-width: 100%;
+    max-height: auto;
+}
+.carousel-control-prev , .carousel-control-next{
+    width: 6vh !important;
+    height: 6vh !important;
+    background-color: #e1e1e1;
+    border: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: .5;
+}
+.carousel-control-prev:hover , 
+.carousel-control-next:hover{
+    opacity: .8;
+}
+.carousel-control-next {
+    right: 90px !important ; 
+}
+.carousel-control-prev ,
+.carousel-control-next {
+    top: 135px !important ;
+    color: black !important ;
+    background: transparent !important ;
+    background-color: transparent  !important;                     
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2) !important;  
+}
+
+.bd-footer{
+    background-color: black !important;
+}
+
+ul{
+    color: #fff;
+}
+.custom-col{
+    flex: 0 0 13%;  /* Custom width based on percentage */
+    max-width: 13%;
+}
+.custom-col1{
+    flex: 0 0 22%;  /* Custom width based on percentage */
+    max-width: 22%;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .custom-col {
+        flex: 0 0 30%;  /* Adjust width for smaller screens */
+        max-width: 30%;
+    }
+
+    .custom-col1 {
+        flex: 0 0 40%;  /* Adjust width for smaller screens */
+        max-width: 40%;
+    }
+}
+
+/* For very small screens (like mobile devices) */
+@media (max-width: 480px) {
+    .custom-col {
+        flex: 0 0 100%;  /* Full width on very small screens */
+        max-width: 100%;
+    }
+
+    .custom-col1 {
+        flex: 0 0 100%;  /* Full width on very small screens */
+        max-width: 100%;
+    }
+}
+
+.text-white, .fs-5{
+    overflow: visible;
+}
+.sticky-top {
+    position: sticky;
+    top: 0; /* Adjust as needed */
+    z-index: 10; /* Optional, for layering above other content */
+}
+
+.custom-col2{
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: end;
+}
+@media (max-width : 768px){
+    .custom-col2{
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: center;
+    }
+}
+@media (max-width : 480px){
+    .custom-col2{
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: center;
+    }
+}
+
+.fullpage{
+    overflow-y: auto; /* Allows vertical scrolling */
+    overflow-x: hidden; /* Hides overflow on the horizontal axis */
+}
